@@ -9,7 +9,6 @@ dist-next/
 target/
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -19,8 +18,6 @@ target/
 Thumbs.db
 
 # Environment
-.env
-.env.local
 
 .claude/
 .atlas/
@@ -43,6 +40,9 @@ skills-lock.json
 !docs/atlas-agent-codex-port-spec.md
 !docs/research/*.md
 !docs/reference/*.md
+# Requests to other teams (the server team's gateway changes): the desktop
+# code cites them, so they have to be in the repo it lives in.
+!docs/requests/*.md
 # The bundled `atlas-self-configure` skill's content — `include_str!`'d into
 # the binary at compile time (`commands/skills.rs`), so it has to ship from a
 # fresh clone the same way the vendored Codex prompts below do.
@@ -73,3 +73,7 @@ ds-bundle/
 .design-sync/learnings/
 .design-sync/node_modules
 .design-sync/ds.css
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
